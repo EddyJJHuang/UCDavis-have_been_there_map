@@ -7,9 +7,35 @@
     <title>UCD制霸生成器 - UCD教学楼制霸标记生成工具</title>
     <meta name="description" content="UCD教学楼制霸标记生成工具">
     <meta name="keywords" content="UCD,UCD.LIVE,UCD制霸,制霸地图">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="style.less">
 </head>
 <body>
-    
+<div id="设置等级">
+    <h2>地区</h2>
+    <a data-level="5">常驻区</a>
+    <a data-level="4">天天去</a>
+    <a data-level="3">经常去</a>
+    <a data-level="2">偶尔去</a>
+    <a data-level="1">去过一次</a>
+    <a data-level="0">没去过</a>
+</div>
+<footer>
+    <a href="https://ucd.live" target="_blank">出品方:UCD.LIVE</a>
+    <a href="https://github.com/EddyJJHuang/UCDavis-have_been_there_map" target="_blank">GitHub</a>
+    <a id="保存" class="按钮">保存成图片</a>
+</footer>
+<div id="输出" style="display: none;">
+	<div>
+		<img>
+	</div>
+	<p>
+		手机端可长按图片
+		<b>“添加到照片”</b>
+	</p>
+	<div>
+		<a class="按钮">关闭</a>
+	</div>
+</div>
+<script src="map.js"></script>
 </body>
 </html>
