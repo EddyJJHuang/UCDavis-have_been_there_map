@@ -12,7 +12,7 @@
     <style>
         html {
             font: 18px/40px slice, sans-serif;
-            background-color: #96D7C6;
+            background-color: #EDEEE9;
             color: #111;
         }
         body {
@@ -70,28 +70,28 @@
         }
         #设置等级 h2[data-level="5"],
         #设置等级 a[data-level="5"] {
-            background: #7097A8;
+            background: #014289;
         }
         #设置等级 h2[data-level="4"],
         #设置等级 a[data-level="4"] {
-            background: #ABD1DC;
+            background: #006faf;
         }
         #设置等级 h2[data-level="3"],
         #设置等级 a[data-level="3"] {
-            background: #D3E7EE;
+            background: #009ac0;
         }
         #设置等级 h2[data-level="2"],
         #设置等级 a[data-level="2"] {
-            background: #C6A477;
+            background: #00ccbc;
         }
         #设置等级 h2[data-level="1"],
         #设置等级 a[data-level="1"] {
-            background: #ECD59F;
+            background: #60f3ab;
         }
         .按钮 {
             background: #FFF;
             box-shadow: 0 0 0 4px #111;
-            border-radius: 3px;
+            border-radius: 5px;
         }
         footer {
             position: absolute;
@@ -206,8 +206,8 @@
                 fill:#111;
                 font-size:30px;
             }
-            #标题,
-            #分数{font-size:50px;}
+            #标题{font-size:70px;}
+            #分数{font-size:70px;}
             
             .z16{font-size:16px;}
             .z18{font-size:18px;}
@@ -225,6 +225,7 @@
             .z40{font-size:40px;}
             .z42{font-size:42px;}
             .z44{font-size:44px;}
+            .z5{font-size:44px; fill:#febe00;}
             #地区 path,
             
             .边框{
@@ -242,23 +243,22 @@
             }
             
             .边框{fill:none;}
-            #地区 path[level="5"]{fill:#7097A8;}
-            #地区 path[level="4"]{fill:#ABD1DC;}
-            #地区 path[level="3"]{fill:#D3E7EE;}
-            #地区 path[level="2"]{fill:#C6A477;}
-            #地区 path[level="1"]{fill:#ECD59F;}
+            #地区 path[level="5"]{fill:#014289;}
+            #地区 path[level="4"]{fill:#006faf;}
+            #地区 path[level="3"]{fill:#009ac0;}
+            #地区 path[level="2"]{fill:#00ccbc;}
+            #地区 path[level="1"]{fill:#60f3ab;}
             
             .er{
                 position: absolute;
                 right: 15%;
                 top: 18%;
             }
-            .zhu{font-size:22px;}
         </style>
 
         <text x="600" y="80" id="标题">UCD制霸地图</text>
-        <text x="600" y="110" class="zhu">本地图仅供娱乐，请勿用作现实参考</text>
-        <text x="600" y="135" class="z18">(建议使用浏览器打开以便于保存为图片)</text>
+        <text x="600" y="130" class="z32">本地图仅供娱乐，请勿用作现实参考</text>
+        <text x="600" y="175" class="z32">(建议使用浏览器打开以便于保存为图片)</text>
 
         <g id="地区">
             <path id="Curto" d="M10 110 L190 110 L190 350 L10 350Z"></path>
@@ -312,13 +312,14 @@
             <path id="Chemistry" d="M740 1250 L870 1250 L870 1390 L740 1390Z"></path>
             <path id="King Hall" d="M790 1420 L1010 1420 L1010 1610 L790 1610Z"></path>
             <path id="Mondavi Center" d="M1130 1480 L1380 1480 L1380 1690 L1130 1690Z"></path>
+            <path d="M950 389 L950 420"></path>
         </g>
 
         <g id="地名">
             <text x="40" y="250" class="z44">Curto</text>
             <text x="228" y="330" class="z38">Segundo</text>
             <text x="704" y="431" class="z25">Cruess Hall</text>
-            <text x="920" y="436" class="z36">1</text>
+            <text x="680" y="380" class="z28">Plant & Environ. Science</text>
             <text x="1026" y="410" class="z36">Hunt</text>
             <text x="1032" y="450" class="z36">Hall</text>
             <text x="1187" y="415" class="z24">Hickey</text>
@@ -407,27 +408,28 @@
             <text x="238" y="1519" class="z32">Academic Surge</text>
             <text x="30" y="1380" class="z44">Tecero</text>
             <text x="1420" y="1390" class="z44">出品方：</text>
-            <text x="1420" y="300" class="z38">扫码生成你的</text>
-            <text x="1420" y="350" class="z38">“UCD制霸地图”</text>
+            <text x="1530" y="350" class="z38">扫码生成你的</text>
+            <text x="1510" y="400" class="z38">“UCD制霸地图”</text>
         </g>
 
-        <text id="分数" x="580" y="270">分数</text>
+        <text id="分数" x="540" y="320">分数</text>
 
         <g id="等级">
-            <path fill="#7097A8" d="M1600 800 H 1800 V 880 H1600 Z"></path>
-            <path fill="#ABD1DC" d="M1600 880 H 1800 V 960 H1600 Z"></path>
-            <path fill="#D3E7EE" d="M1600 960 H 1800 V 1040 H1600 Z"></path>
-            <path fill="#C6A477" d="M1600 1040 H 1800 V 1120 H1600 Z"></path>
-            <path fill="#ECD59F" d="M1600 1120 H 1800 V 1200 H1600 Z"></path>
+            <path fill="#014289" d="M1600 800 H 1800 V 880 H1600 Z"></path>
+            <path fill="#006faf" d="M1600 880 H 1800 V 960 H1600 Z"></path>
+            <path fill="#009ac0" d="M1600 960 H 1800 V 1040 H1600 Z"></path>
+            <path fill="#00ccbc" d="M1600 1040 H 1800 V 1120 H1600 Z"></path>
+            <path fill="#60f3ab" d="M1600 1120 H 1800 V 1200 H1600 Z"></path>
             <path class="边框" d="M1600 800 H 1800 V1200 H1600 Z"></path>
-            <text x="1620" y="855" class="z44">常驻区5</text>
-            <text x="1620" y="935" class="z44">天天去4</text>
-            <text x="1620" y="1015" class="z44">经常去3</text>
-            <text x="1620" y="1095" class="z44">偶尔去2</text>
-            <text x="1603" y="1175" class="z44">去过一次1</text>
+            <text x="1620" y="855"  class="z5">常驻区5</text>
+            <text x="1620" y="935" class="z5">天天去4</text>
+            <text x="1620" y="1015" class="z5">经常去3</text>
+            <text x="1620" y="1095" class="z5">偶尔去2</text>
+            <text x="1603" y="1175" class="z5">去过一次1</text>
         </g>
 
         <image id="image0" width="500" x="1450" y="1430" href="Logo.png"></image>
+        <image id="image1" width="300" x="1500" y="10" href="QR.png"></image>
     </svg>
     
     <div id="设置等级">
